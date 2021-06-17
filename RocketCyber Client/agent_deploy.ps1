@@ -123,6 +123,7 @@ function installer_main() {
                 Remove-Item -Path $local_file -Force
             } else {
                 LogScreen "$agent_name installation failed"
+                Remove-Item -Path $local_file -Force
             }
         }
 
