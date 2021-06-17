@@ -15,7 +15,7 @@ param (
     [string]$license_key
 )
 
-. C:\Tools\IntunePSLibrary\IKL_PS_Library.PS1 -ApplicationName "RocketCyber" -PackageAuthor "Robert Milner" -Version "1.0"
+. C:\Tools\IntunePSLibrary\IKL_PS_Library.PS1 -ApplicationName "RocketCyber Agent" -PackageAuthor "Robert Milner" -Version "1.0"
 
 $url = "https://app.rocketcyber.com/"
 $agent_setup_url = "$($url)/api/customers/$($license_key)/supports/agent-setup.exe"
