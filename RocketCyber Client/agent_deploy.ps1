@@ -10,12 +10,12 @@
 # We download this script using another PowerShell script in Intune, and then run execute it
 # We actually set the required license key as part of the Intune package, so that we can reuse these scripts anywhere! Pretty useful!
 
-. C:\Tools\IntunePSLibrary\IKL_PS_Library.PS1 -ApplicationName "RocketCyber" -PackageAuthor "Robert Milner" -Version "1.0"
-
 param (
     [Parameter( Mandatory=$true )]
     [string]$license_key
 )
+
+. C:\Tools\IntunePSLibrary\IKL_PS_Library.PS1 -ApplicationName "RocketCyber" -PackageAuthor "Robert Milner" -Version "1.0"
 
 $url = "https://app.rocketcyber.com/"
 $agent_setup_url = "$($url)/api/customers/$($license_key)/supports/agent-setup.exe"
