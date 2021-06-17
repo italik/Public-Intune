@@ -8,6 +8,7 @@
 # PowerShell script taken from RocketCyber, but slightly tweaked to fit our needs :)
 # We have centralised this script so that we can make changes globally, and then if an update is required we can change it one place and all of our customers that reference this script will get the latest version
 # We download this script using another PowerShell script in Intune, and then run execute it
+# We actually set the required license key as part of the Intune package, so that we can reuse these scripts anywhere! Pretty useful!
 
 . C:\Tools\IntunePSLibrary\IKL_PS_Library.PS1 -ApplicationName "RocketCyber" -PackageAuthor "Robert Milner" -Version "1.0"
 
